@@ -11,9 +11,21 @@ If you are still having issues with the install, try running
 ```npm install sharp fs-extra path```
 
 # Usage
-First, upload all your images into the input directory.  This ca be nested directories (not zip as of the current version) and the output will keep this structure.
+
+## Pre downloaded media
+First, upload all your images into the input directory.  This can be nested directories (not zip as of the current version) and the output will keep this structure.
 
 Secondly, open up terminal and cd into the ***compress-media*** directory and run the below command
 ```node compress.js```
+
+## Download from url
+First, create a file in the root called ```external.txt```.  In there, you can add a new url on each line and it will download it into the input folder before compressing.
+
+Secondly, open up terminal and cd into the ***compress-media*** directory and run the below command
+```node compress.js```
+
+# Troubleshooting
+## The input directory is getting over written when I try to compress the media
+If you are using pre-downloaded media and when running the compress command the directory is getting overwritten, please ensure that external.txt is NOT present.  If it is, you have the compress software setup to be pulling from external media
 
 Your media will begin to compress and show in the terminal.  Once it has completed, all compressed images will be in the output directory.
