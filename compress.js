@@ -12,7 +12,6 @@ async function compressImage(inputPath, outputPath) {
         await sharp(inputPath)
             .jpeg({ quality: 70 })  // Adjust quality as needed
             .png({ compressionLevel: 9 })  // Adjust compression level as needed
-            .webp({ quality: 70 })  // Adjust quality as needed
             .toFile(outputPath);
 
         // Each time, add the amount saved to a total
