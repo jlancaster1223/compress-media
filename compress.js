@@ -7,9 +7,11 @@ const inputDir = 'input';
 const outputDir = 'output';
 
 // Function to compress images
+
 async function compressImage(inputPath, outputPath) {
     try {
         await sharp(inputPath)
+            .resize({ width: 1200, height: 1200, fit: 'inside' })
             .jpeg({ quality: 70 })  // Adjust quality as needed
             .png({ compressionLevel: 9 })  // Adjust compression level as needed
             .webp({ quality: 70 })  // Adjust quality as needed
