@@ -1,5 +1,7 @@
+# Media Compression on your desktop
+![example of savings](https://github.com/jlancaster1223/compress-media/blob/main/5b6f3fcc-5c53-4cfc-954d-fd24105041bb.png)
 
-# Installation 
+## Installation 
 First, open up terminal and cd into the ***compress-media*** directory.
 
 Then, run the below command to install the packages
